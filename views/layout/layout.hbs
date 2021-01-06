@@ -10,21 +10,61 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Shopping Cart</title>
+    <title>K Mart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+    h1 {
+        font-family: 'Amatic SC', cursive;
+    }
+    a {
+         font-family: 'Amatic SC', cursive;
+
+    }
+    h2{
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+    }
+    td {
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+    label {
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+    span {
+        font-family: 'Amatic SC', cursive;
+    }
+    th {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    button{
+        font-family: 'Josefin Sans', sans-serif;
+    }
+</style>
 </head>
 
 <body>
     {{#if admin}}
     {{>admin_header}}
-    {{else}}
-    {{>user_header}}
+    {{else if dealer}}
+    {{>dealer-sidebar}}
+    {{else if users}}
+    {{>home-header}}
+    
     {{/if}}
     {{{body}}}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    {{!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>--}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

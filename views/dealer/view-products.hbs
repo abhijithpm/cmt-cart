@@ -1,0 +1,46 @@
+<section>
+    <div class="container">
+        <div class="row mt-4 ">
+            <a href="/dealer/add-product" class="btn btn-success ml-auto">Add product</a>
+        </div>
+        
+        <br>
+        
+        <div class="card" style="border:none">
+          
+          <div class="card-body">
+            	<h2>Products</h2>
+        <table class="table bg-light table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Tittle</th>
+      <th scope="col">Category</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+      {{#each products}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.descrption}}</td>
+      <td>{{this.Price}}</td>
+      <td><img style="width: 50px;height:50px " src="/product-image/{{this._id}}.jpg" alt=""></td>
+       <td>
+        <a href="/dealer/edit-product/{{this._id}}" class="btn btn-primary">Edit</a>
+        <a href="/dealer/delete-product/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a>
+        
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</div>
+    </div>
+</section>

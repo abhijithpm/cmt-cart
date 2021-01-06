@@ -1,0 +1,15 @@
+{{#if error}}
+
+<p>{{error}}</p>
+
+{{/if}}
+
+<p>We have sent you a verification code to your number</p>
+
+<p>Please enter the code here</p>
+
+<form method="POST" action="/step3">
+    <input type="hidden" name="id" value="{{id}}">
+    <input type="text" name="token">
+    <input type="submit" value="Check Code">
+</form>
