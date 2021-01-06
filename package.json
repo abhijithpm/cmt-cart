@@ -1,6 +1,6 @@
 { "name": "myapp", 
   "description": "a really cool app",  
-  "version": "1.0.0", 
+  "version": "12.18.3", 
   "engines": { 
       "node": "8.9.4" 
    }
