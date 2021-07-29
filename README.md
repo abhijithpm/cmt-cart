@@ -1,4 +1,4 @@
-# cmt-cart
+# cmt-cart Full Stack Shopping Website
 #Dyanamic website using
 
 Node js
